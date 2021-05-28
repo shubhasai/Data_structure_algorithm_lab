@@ -1,15 +1,20 @@
 //WAP in C to find out the number of substring “MAT” present in the string “MATHEMATICS”.
 #include<stdio.h>
 int check(char c[],char d[],int i,int j){
-    if ((i == 0 && j == 0) || j == 0)
-	return 1;
-	if (i == 0)
-		return 0;
-    if (c[i - 1] == d[j - 1])
-		return check(c, d, i - 1, j - 1) + check(c, d, i - 1, j);
-	else
-		return check(c, d, i - 1, j);
-    return 0;
+    int res=0;
+    for (int k=0;k<i-j;k++){
+        int l;
+        for( l=0;l<j;l++){
+            if(c[l+k]!=d[l]){
+                break;
+            }
+        }
+        if(l==j){
+            res++;
+            l=0;
+        }
+    }
+    return res;
 }
 int main(){
     int m=0,n=0;
