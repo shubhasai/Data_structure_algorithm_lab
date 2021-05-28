@@ -1,0 +1,14 @@
+1.      WAP in C to find out the length of the given string “pneumonoultramicroscopicsilicovolcanoconiosis”.
+
+
+2.      WAP in C to find out the number of substring “MAT” present in the string “MATHEMATICS”.
+
+
+3.      WAP in C to concatenate two stings “education” and “alists”.
+
+
+4.      WAP in C to compare two strings. (output: “same” or “different”)
+          a.      “AVOID” and “avoid”
+          b.      “using” and “using”
+          c.      “string” and “strings”
+          d.      “library” and “athenaeum”
